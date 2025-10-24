@@ -1,6 +1,6 @@
 # PeerSkills – Peer Learning Platform
 
-![PeerSkills Logo](logo.png) <!-- optional if you have a logo -->
+
 
 PeerSkills is a full-stack web application that allows users to **share skills they can teach**, find others to **learn from**, 
 and **connect with like-minded peers**. Built with **React, Node.js, Express, MongoDB**, and deployed on **Netlify (frontend)** and **Render (backend)**, 
