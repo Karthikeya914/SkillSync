@@ -4,12 +4,12 @@ import authMiddleware from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
-// Add skills (protected)
+// Add skills 
 router.put("/skills", authMiddleware, addSkills);
 
-// Search users by skill (public or protected)
+// Search users by skill 
 router.get("/search", authMiddleware, searchUsers);
 
-
+// Get User by Id
 router.get("/:id", authMiddleware, getUser);
 export default router;
