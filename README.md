@@ -48,6 +48,7 @@ this project is a complete end-to-end solution for peer learning.
 **Deployment:**
 - Frontend: Netlify
 - Backend: Render
+- Deployment Link:peerskills.netlify.app
 
 ---
 
