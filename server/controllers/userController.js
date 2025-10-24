@@ -19,7 +19,7 @@ export const addSkills = async (req, res) => {
     res.status(500).json({ message: "Failed to update skills" });
   }
 };
-// Search users by skill (case-insensitive)
+// Search users by skill 
 export const searchUsers = async (req, res) => {
   const { skill, type } = req.query;
 
@@ -31,7 +31,7 @@ export const searchUsers = async (req, res) => {
       ? { teachSkills: { $regex: skill, $options: "i" } }  // users who can teach
       : { learnSkills: { $regex: skill, $options: "i" } }; // users who want to learn
 
-    // Exclude the logged-in user
+    // Excluding the logged-in user
     const users = await User.find({
       ...query,
       _id: { $ne: req.user.id }
